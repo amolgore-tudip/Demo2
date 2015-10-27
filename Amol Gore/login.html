@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="login.css">
+</head>
+
+
+<body>
+<h1>Login Form</h1>
+<div>
+<form name="myform" action="city.html" method="get" onsubmit="return validate()" >
+        <input type="text" name="username" placeholder="username">
+        <input type="password" name="password" placeholder="password">
+        <span>
+            <input type="checkbox" name="checkbox">
+            <label for="checkbox">remember</label>
+        </span>
+        <input type="submit" value="submit"/>
+    </form>
+</div>
+<script>
+function validate()
+{
+var x=document.myform.password.value;
+if(document.myform.username.value=="")
+{
+alert("please enter the userName");
+return false;
+}
+if(x==""|| x=="-")
+{
+
+alert("please enter the valid password");
+return false;
+}
+}
+</script>
+</body>
+</html>

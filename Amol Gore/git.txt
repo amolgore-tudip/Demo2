@@ -1,0 +1,194 @@
+https://github.com/saurabh-patil/session14
+
+
+
+
+Microsoft Windows [Version 6.3.9600]
+(c) 2013 Microsoft Corporation. All rights reserved.
+
+C:\Users\TUDIP>git add
+fatal: Not a git repository (or any of the parent directories): .git
+
+C:\Users\TUDIP>cd github1
+The system cannot find the path specified.
+
+C:\Users\TUDIP>d:
+
+D:\>cd github1
+
+D:\github1>git config --global user.name "Amol Gore"
+
+D:\github1>git config --global user.email "amol.gore@tudip.nl"
+
+D:\github1>git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+
+D:\github1>git pull
+fatal: unable to access 'https://github.com/saurabh-patil/session14.git/': U
+wn SSL protocol error in connection to github.com:443
+
+D:\github1>git pull
+remote: Counting objects: 19, done.
+remote: Compressing objects: 100% (19/19), done.
+remote: Total 19 (delta 8), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (19/19), done.
+From https://github.com/saurabh-patil/session14
+   e5e287f..e089ed3  master     -> origin/master
+Updating e5e287f..e089ed3
+Fast-forward
+ Day2/file.html  |  4 +++-
+ Day2/file.html~ | 16 ++++++++++++++++
+ Day4/alert.html |  2 +-
+ 3 files changed, 20 insertions(+), 2 deletions(-)
+ create mode 100644 Day2/file.html~
+
+D:\github1>git branch
+* master
+
+D:\github1>git branch Amol
+
+D:\github1>
+D:\github1>git branch
+  Amol
+* master
+
+D:\github1>git checkout amol
+M       Day4/bulb.html
+Switched to branch 'amol'
+
+D:\github1>git checkout amol
+M       Day4/bulb.html
+Already on 'amol'
+
+D:\github1>git add D:\github1\Day4 .
+
+D:\github1>git merge master
+Already up-to-date.
+
+D:\github1>git commit -m"done changes in bulb.html"
+[amol 2616b07] done changes in bulb.html
+ 1 file changed, 1 insertion(+)
+
+D:\github1>git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': amolgore-tudip
+Password for 'https://amolgore-tudip@github.com':
+Everything up-to-date
+
+D:\github1>git push origin master
+Username for 'https://github.com': amolgore-tudip
+Password for 'https://amolgore-tudip@github.com':
+Everything up-to-date
+
+D:\github1>git merge master
+Already up-to-date.
+
+D:\github1>git status
+On branch amol
+nothing to commit, working directory clean
+
+D:\github1>git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+D:\github1>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working directory clean
+
+D:\github1>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working directory clean
+
+D:\github1>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Day4/bulb.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\github1>git add Day4\bulb.html
+
+D:\github1>git commit -m "changes in bulb.html"
+[master 77ec005] changes in bulb.html
+ 1 file changed, 2 insertions(+)
+
+D:\github1>git checkout
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+D:\github1>git checkout amol
+Switched to branch 'amol'
+
+D:\github1>git status
+On branch amol
+nothing to commit, working directory clean
+
+D:\github1>git merge master
+Auto-merging Day4/bulb.html
+CONFLICT (content): Merge conflict in Day4/bulb.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+D:\github1>git add Day4\bulb.html
+
+D:\github1>git status
+On branch amol
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+
+        modified:   Day4/bulb.html
+
+
+D:\github1>git commit -m "changes performed"
+[amol be54f43] changes performed
+
+D:\github1>git push origin amol
+Username for 'https://github.com': amolgore-tudip
+Password for 'https://amolgore-tudip@github.com':
+Counting objects: 20, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 987 bytes | 0 bytes/s, done.
+Total 12 (delta 10), reused 0 (delta 0)
+To https://github.com/saurabh-patil/session14.git
+ * [new branch]      amol -> amol
+
+D:\github1>
+
+
+
+
+
+
+

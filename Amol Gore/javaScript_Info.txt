@@ -1,0 +1,3 @@
+JavaScript and Java are completely different languages, both in concept and design.
+JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.
+ECMA-262 is the official name. ECMAScript 6 (released in June 2015) is the latest official version of JavaScript.

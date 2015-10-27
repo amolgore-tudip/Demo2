@@ -1,0 +1,555 @@
+Version 	Year
+HTML 	        1991
+HTML 2.0 	1995
+HTML 3.2 	1997
+HTML 4.01 	1999
+XHTML 	        2000
+HTML5 	        2014
+========================================================================
+Common Declarations
+
+HTML5
+<!DOCTYPE html>
+HTML 4.01
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+XHTML 1.0
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+============================================================================
+The DOCTYPE declaration defines the document type to be HTML.
+===========================================================================
+The <html> element defines the whole document.
+==========================================================================
+The <h1> element defines a heading.
+==========================================================================
+The element content is: My First Heading.
+example:-<h1>My First Heading</h1>
+==========================================================================
+Empty HTML Elements:-
+
+HTML elements with no content are called empty elements.
+
+<br> is an empty element without a closing tag (the <br> tag defines a line break).
+
+Empty elements can be "closed" in the opening tag like this: <br />.
+
+HTML5 does not require empty elements to be closed. But if you want stricter validation, or you need to make your document readable by XML parsers, you should close all HTML elements.
+===========================================================================
+HTML Attributes:-
+
+Attributes provide additional information about HTML elements.
+HTML Attributes
+
+    HTML elements can have attributes
+    Attributes provide additional information about an element
+    Attributes are always specified in the start tag
+    Attributes come in name/value pairs like: name="value"
+
+=============================================================================
+The href Attribute:-
+
+HTML links are defined with the <a> tag. The link address is specified in the href attribute:
+Example
+<a href="http://www.w3schools.com">This is a link</a> 
+=============================================================================
+Chapter Summary:=
+
+    All HTML elements can have attributes
+    The HTML title attribute provides additional "tool-tip" information
+    The HTML href attribute provides address information for links
+    The HTML width and height attributes provide size information for images
+    The HTML alt attribute provides text for screen readers
+    At W3Schools we always use lowercase HTML attribute names
+    At W3Schools we always quote attributes with double quotes
+============================================================================
+Attribute 	Description
+alt 	Specifies an alternative text for an image
+disabled 	Specifies that an input element should be disabled
+href 	Specifies the URL (web address) for a link
+id 	Specifies a unique id for an element
+src 	Specifies the URL (web address) for an image
+style 	Specifies an inline CSS style for an element
+title 	Specifies extra information about an element (displayed as a tool tip)
+value 	Specifies the value (text content) for an input element.
+=============================================================================
+The HTML <title> Element
+
+The HTML <title> element is meta data. It defines the HTML document's title.
+
+The title will not be displayed in the document, but might be displayed in the browser tab.
+The HTML <meta> Element
+
+The HTML <meta> element is also meta data.
+
+It can be used to define the character set, and other information about the HTML document.
+=============================================================================
+Tag 	Description
+<p> 	Defines a paragraph
+<br> 	Inserts a single line break
+<pre> 	Defines pre-formatted text
+==============================================================================
+The HTML Style Attribute
+
+The HTML style attribute has the following syntax:
+style="property:value"
+ex:-
+<body style="background-color:lightgrey">
+</body>
+==============================================================================
+HTML Text Color
+
+The color property defines the text color to be used for an HTML element:
+Example
+<h1 style="color:blue">This is a heading</h1>
+<p style="color:red">This is a paragraph.</p>
+==============================================================================
+HTML Fonts
+
+The font-family property defines the font to be used for an HTML element:
+Example
+<h1 style="font-family:verdana">This is a heading</h1>
+<p style="font-family:courier">This is a paragraph.</p>
+Note :=The <font> tag, supported in older versions of HTML, is not valid in HTML5.
+==============================================================================
+HTML Text Size
+
+The font-size property defines the text size to be used for an HTML element:
+Example
+<h1 style="font-size:300%">This is a heading</h1>
+<p style="font-size:160%">This is a paragraph.</p>
+
+HTML Text Alignment:=
+
+The text-align property defines the horizontal text alignment for an HTML element:
+Example
+<h1 style="text-align:center">Centered Heading</h1>
+<p>This is a paragraph.</p>
+
+Note 	The <center> tag, supported in older versions of HTML, is not valid in HTML5.
+Chapter Summary
+
+    Use the style attribute for styling HTML elements
+    Use background-color for background color
+    Use color for text colors
+    Use font-family for text fonts
+    Use font-size for text sizes
+    Use text-align for text alignment
+=================================================================
+HTML Marked Formatting
+
+The HTML <mark> element defines marked or highlighted text:
+Example
+<h2>HTML <mark>Marked</mark> Formatting</h2>
+================================================================
+HTML <bdo> for Bi-Directional Override
+
+The HTML <bdo> element defines bi-directional override.
+
+The <bdo> element is used to override the current text direction:
+Example
+<bdo dir="rtl">This text will be written from right to left</bdo>
+================================================================
+HTML Quotation and Citation Elements
+Tag 	Description
+<abbr> 	Defines an abbreviation or acronym
+<address> 	Defines contact information for the author/owner of a document
+<bdo> 	Defines the text direction
+<blockquote> 	Defines a section that is quoted from another source
+<cite> 	Defines the title of a work
+<q> 	Defines a short inline quotation
+===============================================================
+HTML Computer Code Elements
+Tag 	Description
+<code> 	Defines programming code
+<kbd> 	Defines keyboard input 
+<samp> 	Defines computer output
+<var> 	Defines a mathematical variable
+<pre> 	Defines preformatted text
+===============================================================
+Styling HTML with CSS
+
+CSS stands for Cascading Style Sheets
+
+Styling can be added to HTML elements in 3 ways:
+
+    Inline - using a style attribute in HTML elements
+    Internal - using a <style> element in the HTML <head> section
+    External - using one or more external CSS files
+
+CSS Syntax:=
+
+CSS styling has the following syntax:
+element { property:value; property:value }
+
+nline Styling (Inline CSS)
+
+Inline styling is useful for applying a unique style to a single HTML element
+Internal Styling (Internal CSS)
+
+An internal style sheet can be used to define a common style for all HTML elements on a page. 
+=====================================================
+CSS EXAMPLE:-
+ <!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color:lightgray}
+h1   {color:blue}
+p    {color:green}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+===============================================================
+External Styling (External CSS)
+
+External style sheet are ideal when the style is applied to many pages.
+
+With external style sheets, you can change the look of an entire web site by changing one file.
+===============================================================
+ <!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+    color:blue;
+    font-family:verdana;
+    font-size:300%;
+}
+p  {
+    color:red;
+    font-family:courier;
+    font-size:160%;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+====================================================
+
+    Use the HTML style attribute for inline styling
+    Use the HTML <style> element to define internal CSS
+    Use the HTML <link> element to refer to an external CSS file
+    Use the HTML <head> element to store <style> and <link> elements
+    Use the CSS color property for text colors
+    Use the CSS font-family property for text fonts
+    Use the CSS font-size property for text sizes
+    Use the CSS border property for visible element borders
+    Use the CSS padding property for space inside the border
+    Use the CSS margin property for space outside the border
+======================================================
+HTML Links - The target Attribute
+
+The target attribute specifies where to open the linked document.
+
+This example will open the linked document in a new browser window or in a new tab:
+Example
+<a href="http://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+
+Target Value 	Description
+_blank 	Opens the linked document in a new window or tab
+_self 	Opens the linked document in the same frame as it was clicked (this is default)
+_parent 	Opens the linked document in the parent frame
+_top 	Opens the linked document in the full body of the window
+framename 	Opens the linked document in a named frame
+
+If your webpage is locked in a frame, you can use target="_top" to break out of the frame:
+Example
+<a href="http://www.w3schools.com/html/" target="_top">HTML5 tutorial!</a> 
+=========================================================
+<p><a href="#C4">Jump to Chapter 4</a></p>
+======================================================
+Chapter Summary
+
+    Use the HTML <a> element to define a link
+    Use the HTML href attribute to define the link address
+    Use the HTML target attribute to define where to open the linked document
+    Use the HTML <img> element (inside <a>) to use an image as a link
+    Use the HTML id attribute (id="value") to define bookmarks in a page
+    Use the HTML href attribute (href="#value") to link to the bookmark
+
+=========================================================
+<img src="wrongname.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+===================================================
+Animated Images
+
+The GIF standard allows animated images:
+Example
+<img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;"> 
+===========================================================
+creating table
+==============
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<table style="width:100%">
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>		
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>		
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>		
+    <td>80</td>
+  </tr>
+</table>
+
+</body>
+</html>
+==================================
+An HTML Table with Collapsed Borders
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<table style="width:100%">
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>		
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>		
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>		
+    <td>80</td>
+  </tr>
+</table>
+
+</body>
+</html>
+============================================
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+}
+th {
+    text-align: left;
+}
+</style>
+</head>
+<body>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>		
+    <th>Points</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>		
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>		
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>		
+    <td>80</td>
+  </tr>
+</table>
+
+</body>
+</html>
+======================================
+Chapter Summary
+
+    Use the HTML <table> element to define a table
+    Use the HTML <tr> element to define a table row
+    Use the HTML <td> element to define a table data
+    Use the HTML <th> element to define a table heading
+    Use the HTML <caption> element to define a table caption
+    Use the CSS border property to define a border
+    Use the CSS border-collapse property to collapse cell borders
+    Use the CSS padding property to add padding to cells
+    Use the CSS text-align property to align cell text
+    Use the CSS border-spacing property to set the spacing between cells
+    Use the colspan attribute to make a cell span many columns
+    Use the rowspan attribute to make a cell span many rows
+    Use the id attribute to uniquely define one table
+=======================================
+Unordered HTML Lists
+
+An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.
+
+The list items will be marked with bullets (small black circles):
+Example
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul> 
+===========================================
+Unordered HTML Lists - The Style Attribute
+
+A style attribute can be added to an unordered list, to define the style of the marker:
+Style 	Description
+list-style-type:disc 	The list items will be marked with bullets (default)
+list-style-type:circle 	The list items will be marked with circles
+list-style-type:square 	The list items will be marked with squares
+list-style-type:none 	The list items will not be marked
+Disc:
+<ul style="list-style-type:disc">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul> 
+==========================================
+Ordered HTML Lists - The Type Attribute
+
+A type attribute can be added to an ordered list, to define the type of the marker:
+Type 	Description
+type="1" 	The list items will be numbered with numbers (default)
+type="A" 	The list items will be numbered with uppercase letters
+type="a" 	The list items will be numbered with lowercase letters
+type="I" 	The list items will be numbered with uppercase roman numbers
+type="i" 	The list items will be numbered with lowercase roman numbers
+Numbers:
+<ol type="1">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+Uppercase Letters:
+<ol type="A">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>  
+========================================
+
+HTML Description Lists
+
+HTML also supports description lists.
+
+A description list is a list of terms, with a description of each term.
+
+The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term: 
+Example
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl> 
+========================================
+Nested HTML Lists
+
+List can be nested (lists inside lists):
+Example
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul> 
+=======================================
+Horizontal Lists
+
+HTML lists can be styled in many different ways with CSS.
+
+One popular way, is to style a list to be displayed horizontally:
+Example
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+ul#menu li {
+    display:inline;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Horizontal List</h2>
+
+<ul id="menu">
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+  <li>PHP</li>
+</ul>
+
+</body>
+</html> 
+=========================================
+Chapter Summary
+
+    Use the HTML <ul> element to define an unordered list
+    Use the HTML style attribute to define the bullet style
+    Use the HTML <ol> element to define an ordered list
+    Use the HTML type attribute to define the numbering type
+    Use the HTML <li> element to define a list item
+    Use the HTML <dl> element to define a description list
+    Use the HTML <dt> element to define the description term
+    Use the HTML <dd> element to define the description data
+    Lists can be nested inside lists
+    List items can contain other HTML elements
+    Use the CSS property display:inline to display a list horizontally
+
+=======================================================================
+The <div> Element
+
+The <div> element is a block-level element that is often used as a container for other HTML elements.
+
+The <div> element has no required attributes, but style and class are common.
+=======================================================================
+The <span> Element
+
+The <span> element is an inline element that is often used as a container for some text.
+
+The <span> element has no required attributes, but style and class are common.
+========================================================================
